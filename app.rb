@@ -31,16 +31,13 @@ class App < Sinatra::Base
     num1 = params[:number1]
     num2 = params[:number2]
     op = params[:operation]
-    result = 0
-    if op == "add"
-      result = num1 + num2
-    elsif op == "subtract"
+    result = num1 + num2 if op == "add"
+     op == "subtract"
       result = num1 - num2
-    elsif op == "multiply"
+     op == "multiply"
       result = num1 * num2
-    elsif op == "divide"
+    op == "divide"
       result = num1 / num2
-    end
     result
   end
 end
