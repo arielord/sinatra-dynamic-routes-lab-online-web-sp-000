@@ -22,6 +22,7 @@ class App < Sinatra::Base
     phrase = ""
     while num <= 5 do
       phrase += params[("word"+num.to_s).to_sym]
+      phrase += " "
       num += 1
     end
     phrase
