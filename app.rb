@@ -34,13 +34,13 @@ class App < Sinatra::Base
     result = 0
     if op == "add"
       result = num1 + num2
-    if op == "subtract"
+    elsif op == "subtract"
       result = num1 - num2
-    if op == "multiply"
+    elsif op == "multiply"
       result = num1 * num2
-    if op == "divide"
+    elsif op == "divide"
      result = num1 / num2
-   end
+    end
     result
   end
 end
