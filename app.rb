@@ -24,5 +24,6 @@ class App < Sinatra::Base
       phrase += params[("word"+num.to_s).to_sym]
       num += 1
     end
+    phrase
   end
 end
