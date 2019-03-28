@@ -39,9 +39,7 @@ class App < Sinatra::Base
       result = num1 * num2
     if op == "divide"
      result = num1 / num2
-    result = num1 - num2 unless op != "subtract"
-    result = num1 * num2 unless op != "multiply"
-    result = num1 / num2 unless op != "divide"
+   end
     result
   end
 end
