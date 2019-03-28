@@ -20,7 +20,7 @@ class App < Sinatra::Base
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     num = 1
     phrase = ""
-    while num <= 5 do
+    while num < 5 do
       phrase += params[("word"+num.to_s).to_sym]
       num += 1
     end
