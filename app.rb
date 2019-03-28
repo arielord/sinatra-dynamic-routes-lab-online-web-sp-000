@@ -25,6 +25,6 @@ class App < Sinatra::Base
       phrase += " "
       num += 1
     end
-    phrase.strip
+    phrase.strip + "."
   end
 end
