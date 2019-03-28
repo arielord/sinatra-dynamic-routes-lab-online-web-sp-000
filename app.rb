@@ -28,12 +28,18 @@ class App < Sinatra::Base
     phrase.strip + "."
   end
   get '/:operation/:number1/:number2' do
-    num1 = params[:number1]
-    num2 = params[:number2]
+    num1 = params[:number1].to_i
+    num2 = params[:number2].to_i
     op = params[:operation]
     result = 0
     if op == "add"
       result = num1 + num2
+    elsif op == "subtract"
+      result = num1 - num2
+    elsif op == "multiply"
+      result = num1 * num2
+    else
+     result = num1 / num2
     end
     result
   end
