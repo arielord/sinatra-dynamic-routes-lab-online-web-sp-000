@@ -41,6 +41,6 @@ class App < Sinatra::Base
     else
       result = num1 / num2
     end
-    result
+    "#{result}"
   end
 end
