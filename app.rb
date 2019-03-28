@@ -38,7 +38,7 @@ class App < Sinatra::Base
       result = num1 - num2
     elsif op == "multiply"
       result = num1 * num2
-    elsif op == "divide"
+    else op == "divide"
      result = num1 / num2
     end
     result
